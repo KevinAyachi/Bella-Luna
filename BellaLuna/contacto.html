@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto | Bella Luna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+      <div class="contenedor contenido-header">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo-bellaluna.png" alt="Logo Bella Luna">
+            </a>
+          </div>
+          <div class="barra">
+            <button class="menu-movil">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <nav class="nav">
+              <a href="productos.html">Productos</a>
+              <a href="nosotros.html">Nosotros</a>
+              <a href="blog.html">Blog</a>
+              <a href="contacto.html" class="active">Contacto</a>
+            </nav>
+          </div>
+      </div>
+  </header>
+
+  <main class="contenedor seccion">
+    <h1 class="centrar-texto">Contacto</h1>
+    
+    <div class="contacto-grid">
+      <div class="contacto-info">
+        <h2>Información de Contacto</h2>
+        <p><strong>Email:</strong> info@bellaluna.com</p>
+        <p><strong>WhatsApp:</strong> +51 992 673 082</p>
+        <p><strong>Horario:</strong> Lunes a Viernes: 9am - 6pm, Sábados: 10am - 2pm</p>
+        
+        <div class="redes-sociales">
+          <h3>Síguenos en redes sociales</h3>
+          <div class="iconos-redes">
+            <a href="https://www.instagram.com/bellaluna_tp?igsh=NTMxenhnZXhzOG5v" target="_blank" class="red-social">Instagram</a>
+            <a href="https://www.facebook.com/kevin.ayachillanos" target="_blank" class="red-social">Facebook</a>
+            <a href="https://www.tiktok.com/@bellaluna_tp?_t=8j7S7N0MU9l&_r=1" target="_blank" class="red-social">TikTok</a>
+          </div>
+        </div>
+        
+        <div class="ubicacion">
+          <h3>Ubicación</h3>
+          <p>Tarapoto-Perú</p>
+        </div>
+      </div>
+      
+      <div class="contacto-formulario">
+        <h2>Envíanos un mensaje</h2>
+        <form id="form-contacto">
+          <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <span class="error-mensaje" id="error-nombre"></span>
+          </div>
+          <div class="campo">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <span class="error-mensaje" id="error-email"></span>
+          </div>
+          <div class="campo">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono">
+            <span class="error-mensaje" id="error-telefono"></span>
+          </div>
+          <div class="campo">
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" required>
+            <span class="error-mensaje" id="error-asunto"></span>
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" required></textarea>
+            <span class="error-mensaje" id="error-mensaje"></span>
+          </div>
+          <div class="campo">
+            <input type="submit" value="Enviar Mensaje" class="boton">
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <div class="preguntas-frecuentes">
+      <h2 class="centrar-texto">Preguntas Frecuentes</h2>
+      
+      <div class="acordeon">
+        <div class="acordeon-item">
+          <div class="acordeon-titulo">
+            <h3>¿Cuánto tiempo toma la entrega?</h3>
+            <span class="icono">+</span>
+          </div>
+          <div class="acordeon-contenido">
+            <p>Las entregas en Tarapoto-Morales-La banda de Shilcayo se realizan en un plazo de 24-48 hrs.</p>
+          </div>
+        </div>
+        
+        <div class="acordeon-item">
+          <div class="acordeon-titulo">
+            <h3>¿Cuánto duran las rosas eternas?</h3>
+            <span class="icono">+</span>
+          </div>
+          <div class="acordeon-contenido">
+            <p>Nuestras rosas eternas pueden durar entre 1 a 3 años manteniendo su belleza intacta, siempre que se sigan las recomendaciones de cuidado que proporcionamos.</p>
+          </div>
+        </div>
+        
+        <div class="acordeon-item">
+          <div class="acordeon-titulo">
+            <h3>¿Puedo personalizar mi pedido?</h3>
+            <span class="icono">+</span>
+          </div>
+          <div class="acordeon-contenido">
+            <p>¡Absolutamente! Nos especializamos en crear productos personalizados. Puedes elegir colores, agregar mensajes especiales, incluir fotos y mucho más. Contáctanos para discutir las opciones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="mensaje-enviado" class="mensaje-alerta">
+    <div class="mensaje-contenido">
+      <p>¡Tu mensaje ha sido enviado con éxito! Nos pondremos en contacto contigo pronto.</p>
+      <button class="cerrar-mensaje">Cerrar</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer-contenido">
+        <div class="footer-nav">
+          <h3>Navegación</h3>
+          <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+          </nav>
+        </div>
+        <div class="footer-contacto">
+          <h3>Contacto</h3>
+          <p>Email: info@bellaluna.com</p>
+          <p>WhatsApp: +51 992 673 082</p>
+        </div>
+        <div class="footer-horario">
+          <h3>Horario de Atención</h3>
+          <p>Lunes a Viernes: 9am - 6pm</p>
+          <p>Sábados: 10am - 2pm</p>
+        </div>
+      </div>
+      <p class="copyright">© 2025 Bella Luna - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

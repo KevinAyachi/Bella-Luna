@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog | Bella Luna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+      <div class="contenedor contenido-header">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo-bellaluna.png" alt="Logo Bella Luna">
+            </a>
+          </div>
+          <div class="barra">
+            <button class="menu-movil">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <nav class="nav">
+              <a href="productos.html">Productos</a>
+              <a href="nosotros.html">Nosotros</a>
+              <a href="blog.html" class="active">Blog</a>
+              <a href="contacto.html">Contacto</a>
+            </nav>
+          </div>
+      </div>
+  </header>
+
+  <main class="contenedor seccion">
+    <h1 class="centrar-texto">Nuestro Blog</h1>
+    
+    <div class="blog-grid blog-page">
+      <article class="entrada-blog">
+        <img src="images/blog1.jpg" alt="Blog 1">
+        <div class="contenido-blog">
+          <h2>Cómo elegir el regalo perfecto</h2>
+          <p class="fecha">Publicado: <span>20 Mayo, 2025</span></p>
+          <p>Descubre nuestros consejos para elegir el regalo ideal según la personalidad y gustos de esa persona especial.</p>
+          <p>Elegir un regalo perfecto puede ser todo un desafío. Primero, considera los intereses y hobbies de la persona. Observa qué actividades disfruta en su tiempo libre o qué temas le apasionan.</p>
+          <p>También es importante pensar en las necesidades prácticas. ¿Hay algo que necesite pero que no se compraría para sí mismo? Los regalos útiles suelen ser muy apreciados.</p>
+          <p>Finalmente, personalizar siempre suma puntos. Un detalle personalizado muestra que has puesto pensamiento y esfuerzo en el regalo.</p>
+          <a href="#" class="boton-secundario comentar-btn" data-id="1">Comentar</a>
+        </div>
+      </article>
+      
+      <article class="entrada-blog">
+        <img src="images/blog2.jpg" alt="Blog 2">
+        <div class="contenido-blog">
+          <h2>El significado de las rosas eternas</h2>
+          <p class="fecha">Publicado: <span>15 Mayo, 2025</span></p>
+          <p>Aprende sobre el simbolismo y significado de nuestras rosas eternas y cómo pueden transmitir diferentes mensajes.</p>
+          <p>Las rosas eternas, también conocidas como rosas preservadas, son flores naturales que han sido sometidas a un proceso especial que les permite mantener su belleza y frescura durante años.</p>
+          <p>Cada color tiene un significado especial: el rojo representa amor y pasión, el rosa ternura y admiración, el blanco pureza y nuevo comienzo, y el azul representa lo imposible hecho posible.</p>
+          <p>Al regalar una rosa eterna, estás transmitiendo un mensaje que perdurará en el tiempo, igual que la flor.</p>
+          <a href="#" class="boton-secundario comentar-btn" data-id="2">Comentar</a>
+        </div>
+      </article>
+      
+      <article class="entrada-blog">
+        <img src="images/blog3.jpg" alt="Blog 3">
+        <div class="contenido-blog">
+          <h2>El arte de crear cajas de regalo personalizadas</h2>
+          <p class="fecha">Publicado: <span>10 Mayo, 2025</span></p>
+          <p>Descubre el proceso creativo detrás de nuestras cajas de regalo personalizadas y cómo seleccionamos cada elemento.</p>
+          <p>Crear una caja de regalo personalizada es todo un arte. Comienza con una conversación con el cliente para entender sus necesidades y el mensaje que quiere transmitir.</p>
+          <p>Luego seleccionamos cuidadosamente cada elemento que formará parte de la caja, desde los dulces hasta los pequeños detalles decorativos, asegurándonos de que todo tenga coherencia y cuente una historia.</p>
+          <p>Finalmente, viene el proceso de ensamblaje, donde cuidamos cada detalle para crear una presentación impactante que sorprenda al ser abierta.</p>
+          <a href="#" class="boton-secundario comentar-btn" data-id="3">Comentar</a>
+        </div>
+      </article>
+      
+      <article class="entrada-blog">
+        <img src="images/blog4.jpg" alt="Blog 4">
+        <div class="contenido-blog">
+          <h2>Ideas para celebrar un aniversario especial</h2>
+          <p class="fecha">Publicado: <span>5 Mayo, 2025</span></p>
+          <p>Propuestas creativas para celebrar tu aniversario de manera inolvidable con nuestros productos.</p>
+          <p>Los aniversarios son ocasiones especiales que merecen ser celebrados de manera única. Una idea es recrear su primera cita, añadiendo algunos de nuestros detalles personalizados para hacer el momento aún más especial.</p>
+          <p>Otra opción es preparar una caja de recuerdos con fotografías, pequeños objetos significativos y uno de nuestros collares o pulseras personalizadas.</p>
+          <p>También puedes organizar una cena romántica en casa, decorada con nuestras rosas eternas, que permanecerán hermosas mucho después de la celebración.</p>
+          <a href="#" class="boton-secundario comentar-btn" data-id="4">Comentar</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div id="modal-comentario" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar">&times;</span>
+      <div class="comentario-form">
+        <h2>Deja tu comentario</h2>
+        <form id="form-comentario">
+          <input type="hidden" id="blog-id" value="">
+          <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+          </div>
+          <div class="campo">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="campo">
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" required></textarea>
+          </div>
+          <div class="campo">
+            <input type="submit" value="Enviar Comentario" class="boton">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer-contenido">
+        <div class="footer-nav">
+          <h3>Navegación</h3>
+          <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+          </nav>
+        </div>
+        <div class="footer-contacto">
+          <h3>Contacto</h3>
+          <p>Email: info@bellaluna.com</p>
+          <p>WhatsApp: +51 987 654 321</p>
+        </div>
+        <div class="footer-horario">
+          <h3>Horario de Atención</h3>
+          <p>Lunes a Viernes: 9am - 6pm</p>
+          <p>Sábados: 10am - 2pm</p>
+        </div>
+      </div>
+      <p class="copyright">© 2025 Bella Luna - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

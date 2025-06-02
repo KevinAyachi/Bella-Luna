@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Productos | Bella Luna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+      <div class="contenedor contenido-header">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo-bellaluna.png" alt="Logo Bella Luna">
+            </a>
+          </div>
+          <div class="barra">
+            <button class="menu-movil">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <nav class="nav">
+              <a href="productos.html" class="active">Productos</a>
+              <a href="nosotros.html">Nosotros</a>
+              <a href="blog.html">Blog</a>
+              <a href="contacto.html">Contacto</a>
+            </nav>
+          </div>
+      </div>
+  </header>
+
+  <main class="contenedor">
+    <h1 class="centrar-texto">Nuestros Productos</h1>
+    
+    <div class="filtros">
+      <button class="filtro-btn active" data-categoria="todos">Todos</button>
+      <button class="filtro-btn" data-categoria="rosas">Rosas Eternas</button>
+      <button class="filtro-btn" data-categoria="box">Box</button>
+      <button class="filtro-btn" data-categoria="pulseras">Pulseras</button>
+      <button class="filtro-btn" data-categoria="collares">Collares</button>
+    </div>
+
+    <section id="productos-seccion" class="productos-grid">
+      <div class="producto" data-categoria="rosas">
+        <img src="images/anuncio1.jpg" alt="Ramo de XV">
+        <div class="contenido-producto">
+          <h3>Ramo de XV</h3>
+          <p>Ramo de 15 rosas eternas personalizada para la quinceañera.</p>
+          <p class="precio">80 soles</p>
+          <a href="#" class="boton-secundario ver-detalle" data-id="1">Ver Detalle</a>
+        </div>
+      </div>
+      <div class="producto" data-categoria="rosas">
+        <img src="images/anuncio2.jpg" alt="Ramo Unitario">
+        <div class="contenido-producto">
+          <h3>Ramo Unitario</h3>
+          <p>Ramo de una sola rosa eterna personalizado</p>
+          <p class="precio">20 soles</p>
+          <a href="#" class="boton-secundario ver-detalle" data-id="2">Ver Detalle</a>
+        </div>
+      </div>
+      <div class="producto" data-categoria="box">
+        <img src="images/anuncio3.jpg" alt="Box Cumple">
+        <div class="contenido-producto">
+          <h3>Box Cumple</h3>
+          <p>Box de cumpleaños, incluye peluche, varios dulces, una corona y mensaje personalizado.</p>
+          <p class="precio">100 soles</p>
+          <a href="#" class="boton-secundario ver-detalle" data-id="3">Ver Detalle</a>
+        </div>
+      </div>
+      <div class="producto" data-categoria="box">
+        <img src="images/anuncio4.jpg" alt="Box Cumple 2.0">
+        <div class="contenido-producto">
+          <h3>Box Cumple 2.0</h3>
+          <p>Box de cumpleaños, varios chocolates y mensaje personalizado.</p>
+          <p class="precio">50 soles</p>
+          <a href="#" class="boton-secundario ver-detalle" data-id="4">Ver Detalle</a>
+        </div>
+      </div>
+      <div class="producto" data-categoria="pulseras">
+        <img src="images/anuncio5.jpeg" alt="Pulseras para parejas">
+        <div class="contenido-producto">
+          <h3>Pulseras para parejas</h3>
+          <p>Pulseras con los nombres de la pareja.</p>
+          <p class="precio">25 soles</p>
+          <a href="#" class="boton-secundario ver-detalle" data-id="5">Ver Detalle</a>
+        </div>
+      </div>
+      <div class="producto" data-categoria="collares">
+        <img src="images/anuncio6.jpeg" alt="Collares para parejas">
+        <div class="contenido-producto">
+          <h3>Collares para parejas</h3>
+          <p>Collares con la inicial de la pareja.</p>
+          <p class="precio">40 soles</p>
+          <a href="#" class="boton-secundario ver-detalle" data-id="6">Ver Detalle</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar">&times;</span>
+      <div id="producto-detalle" class="producto-detalle">
+        <!-- Contenido dinámico -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer-contenido">
+        <div class="footer-nav">
+          <h3>Navegación</h3>
+          <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+          </nav>
+        </div>
+        <div class="footer-contacto">
+          <h3>Contacto</h3>
+          <p>Email: info@bellaluna.com</p>
+          <p>WhatsApp: +51 987 654 321</p>
+        </div>
+        <div class="footer-horario">
+          <h3>Horario de Atención</h3>
+          <p>Lunes a Viernes: 9am - 6pm</p>
+          <p>Sábados: 10am - 2pm</p>
+        </div>
+      </div>
+      <p class="copyright">© 2025 Bella Luna - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
